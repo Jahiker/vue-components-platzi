@@ -20,3 +20,6 @@
 ## Componente transition
 -- Es un componente que permite agregar animaciones css 
 -- Se le coloca un name al componente y esa sera la clase identificadora para establecer animaciones 
+
+## Teleports
+-- Es un tipo de componente espacial y permite que un componente definido pueda mostrarse en otra parte del documento

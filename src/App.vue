@@ -1,17 +1,14 @@
 <template>
-  <button @click="show = !show">Menu</button>
-  <transition name="fade">
-    <MenuMain v-show="show" />
-  </transition>
+  <ModalComponent />
 </template>
 
 <script>
-import MenuMain from "./components/MenuMain.vue";
+import ModalComponent from "./components/ModalComponent.vue";
 
 export default {
   name: "App",
   components: {
-    MenuMain,
+    ModalComponent,
   },
   data() {
     return {
