@@ -1,20 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js Platzi App" />
+  <button @click="show = !show">Menu</button>
+  <transition name="fade">
+    <MenuMain v-show="show" />
+  </transition>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
-import { defineAsyncComponent } from "vue";
-
-const HelloWorld = defineAsyncComponent(() =>
-  import("./components/HelloWorld.vue")
-);
+import MenuMain from "./components/MenuMain.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    MenuMain,
+  },
+  data() {
+    return {
+      show: false,
+    };
   },
 };
 </script>
@@ -27,5 +29,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.fade-leave-to,
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.5s ease;
 }
 </style>

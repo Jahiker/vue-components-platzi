@@ -1,0 +1,22 @@
+# VUE JS, OPTION API Y COMPOSITION API
+
+## Options API 
+-- Podemos crear componentes completo desde la configuracion de un objeto json 
+
+## Composition API 
+-- Tiene una estructura mas parecida a la programacion funcional y el codigo es mucho mas organizado
+
+## Styles in components 
+-- Los estilos que se definen en un componente, se definen como estilos globales
+-- para delimitar los estilos, unicamente al componente se utiliza el atributo scoped => <style scoped>
+
+## Component <componenet :is=""></componenet>
+-- es un componente que se puede comportar como cualquier otro componente que reciba en la directiva :is 
+
+## Componentes asincronos
+-- Vue nos proporciona una funcion => defineAsyncComponent
+-- esta nos permite cargar los componentes de forma asincrona solo cuando son necesarios y asi ayudar al performance del sitio.
+
+## Componente transition
+-- Es un componente que permite agregar animaciones css 
+-- Se le coloca un name al componente y esa sera la clase identificadora para establecer animaciones 
