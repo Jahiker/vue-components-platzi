@@ -38,3 +38,12 @@
 -- updated: ya el componen: antes de que se destruyate se ha actualizado
 -- beforeUnmount: antes de que se destruya el componente
 -- unmounted: ya fue destruido el componente 
+
+## Mixins 
+-- Es una opcion disponible en la Options API de vue 
+-- Nos permite combinar los json de la options API para poder crear componentes genericos 
+-- estos componentes al ser genericos son reutilizables y a travez de atributos y metodos defines la forma del componente como lo requieras (Es como una especie de herencia o composicion de componentes)
+-- Como desventaja tenemos que no sabemos que hay en el mixins hasta que abres su codigo 
+-- como no hay visibilidad directa es un poco dificil debuggear
+-- a partir de la version 3 ya no son necesarios por que se cuenta con el composition API 
+
