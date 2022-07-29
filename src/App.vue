@@ -1,19 +1,29 @@
 <template>
-  <ModalComponent />
+  <div>{{ text }}</div>
 </template>
 
 <script>
-import ModalComponent from "./components/ModalComponent.vue";
-
 export default {
   name: "App",
-  components: {
-    ModalComponent,
-  },
   data() {
     return {
-      show: false,
+      text: "Hola Vue",
     };
+  },
+  beforeCreate() {
+    // No se ha inicializado el acceso a la reactividad de Vue y no hay data
+    // No existe el elemento, ni se ha agregado al DOM
+    console.log("beforeCreate", this.$data, this.$el);
+  },
+  created() {
+    // Se inicializa el acceso a la reactividad de Vue y ya hay data
+    // Ya existe el elemento, mas no se ha agregado al DOM
+    console.log("created", this.$data, this.$el);
+  },
+  mounted() {
+    // Ya hay acceso a la reactividad de Vue y ya hay data
+    // Ya existe el elemento y se ha agregado al DOM
+    console.log("mounted", this.$data, this.$el);
   },
 };
 </script>
