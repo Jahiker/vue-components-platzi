@@ -23,3 +23,18 @@
 
 ## Teleports
 -- Es un tipo de componente espacial y permite que un componente definido pueda mostrarse en otra parte del documento
+
+## Virtual DOM (Virtual Document Object Model)
+-- Es una capa intermedia entre el template y el DOM hecha con javascript
+-- Es una copia del DOM que vive en la memoria RAM
+-- Es mas facil de acceder y modificar el el DOM porque es un objeto JS 
+
+## Ciclo de vida de los componentes 
+-- beforeCreate: antes de que se comience a crear el componente 
+-- created: el componente ya esta creado mas no existe en el DOM 
+-- beforeMount: antes de montar el componente en el DOM 
+-- mounted: ya esta el componente montado 
+-- beforeUpdate: antes de que suceda cualquier modificacion del componente 
+-- updated: ya el componen: antes de que se destruyate se ha actualizado
+-- beforeUnmount: antes de que se destruya el componente
+-- unmounted: ya fue destruido el componente 
