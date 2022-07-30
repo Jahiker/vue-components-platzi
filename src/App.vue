@@ -28,6 +28,7 @@ export default {
     // Ya hay acceso a la reactividad de Vue y ya hay data
     // Ya existe el elemento y se ha agregado al DOM
     console.log("mounted", this.$data, this.$el);
+    this.saludo("Vue Js");
   },
 };
 </script>
